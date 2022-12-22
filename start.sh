@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Cyniteofficial/Auto-Filter-V5.git /Auto-Filter-V5
+  git clone https://github.com/PirateGamers/Xyz-2.0.git /.     
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Auto-Filter-V5
+  git clone $UPSTREAM_REPO /Xyz-2.0
 fi
-cd /Auto-Filter-V5
+cd /Xyz-2.0
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
