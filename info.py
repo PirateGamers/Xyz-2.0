@@ -37,9 +37,9 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://priyanshu:priyanshu@cluster0.2udjjdu.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "KINGMOVIES")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_filessss')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://TechnicalBichu:TechnicalBichu@cluster0.65avddh.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "TechnicalBichu")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegramm_filessss')
 
 # Channel Button Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Download_Movies_In_Hindi')
