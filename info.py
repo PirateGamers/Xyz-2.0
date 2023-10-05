@@ -12,23 +12,23 @@ def is_enabled(value, default):
 
 # Bot information
 PORT = environ.get("PORT", "8080")
-SESSION = environ.get('SESSION', 'Media_search')
+SESSION = environ.get('SESSION', 'Popcorn')
 API_ID = int(environ.get('API_ID', '12192489'))
 API_HASH = environ.get('API_HASH', 'ed39e721f5d4fd6d3c05121c1661b8ea')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5787217270:AAHnrp9mk4LRcElJBv8KY5xkXJjUYEKr3RI")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/1c7f27971b70923dc7dc3.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/1c7f27971b70923dc7dc3.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/8ee413afc32e5b393e790.jpg")
-NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/1f7d1927a9e2d91351130.jpg")
+PICS = (environ.get('PICS', 'https://graph.org/file/4a1a5f68b895f8dc73199.jpg')).split()
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/4a1a5f68b895f8dc73199.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/4a1a5f68b895f8dc73199.jpg")
+NEWGRP = environ.get("NEWGRP", "https://graph.org/file/4a1a5f68b895f8dc73199.jpg")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5097048997').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001373716687').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001735967948').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5097048997').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -37,9 +37,9 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://TechnicalBichu:TechnicalBichu@cluster0.65avddh.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "TechnicalBichu")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegramm_filessss')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://moviescheckpoints:<password>@cluster0.rd7llap.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '1')
 
 # Channel Button Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Download_Movies_In_Hindi')
@@ -48,14 +48,14 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Download_Movies_In_Hind
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001786369133))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1004041117088))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001373716687))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/Technical_Bots')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/How_To_Open_Links_23')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001708990174))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001708990174)
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001602655257))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001905046197))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
@@ -69,7 +69,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001954399383')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
@@ -80,7 +80,7 @@ AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 MAUTO_DELETE = is_enabled((environ.get('MAUTO_DELETE', "True")), True)
 
 # Delete Time
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600))
+DELETE_TIME = int(environ.get('DELETE_TIME', 360))
 SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 60))
 
 # URL SHORTNER
